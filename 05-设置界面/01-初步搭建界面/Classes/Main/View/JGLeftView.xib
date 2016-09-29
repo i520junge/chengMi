@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGLeftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="NHp-dI-UOj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-Ti-MDp" customClass="JGCityBtn">
+                    <rect key="frame" x="25" y="42" width="153" height="42"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="城市" image="city_down_6P">
+                        <color key="titleColor" red="0.47058823529411764" green="0.93333333333333335" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cityBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="awq-RT-bqb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCC-54-K0I" customClass="JGButton">
+                    <rect key="frame" x="25" y="104" width="169" height="57"/>
+                    <state key="normal" backgroundImage="home"/>
+                    <state key="selected" backgroundImage="homeSeletced"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="kOC-Vy-Tpr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bb-SM-aNN" customClass="JGButton">
+                    <rect key="frame" x="25" y="175" width="174" height="56"/>
+                    <state key="normal" backgroundImage="found"/>
+                    <state key="selected" backgroundImage="foundSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="O2M-pl-oCM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G25-bg-uSC">
+                    <rect key="frame" x="25" y="246" width="169" height="52"/>
+                    <state key="normal" backgroundImage="unLogin"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nas-Lq-HXN">
+                    <rect key="frame" x="25" y="317" width="194" height="54"/>
+                    <state key="normal" image="weixin" backgroundImage="home"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-yc-bYN">
+                    <rect key="frame" x="25" y="379" width="194" height="49"/>
+                    <state key="normal" backgroundImage="sina"/>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvs-oN-TJ7" customClass="JGButton">
+                    <rect key="frame" x="25" y="449" width="171" height="59"/>
+                    <state key="normal" backgroundImage="message"/>
+                    <state key="selected" backgroundImage="messageSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Leo-Cv-6mS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0W-7R-fDt" customClass="JGButton">
+                    <rect key="frame" x="25" y="503" width="171" height="59"/>
+                    <state key="normal" backgroundImage="seting"/>
+                    <state key="selected" backgroundImage="setingSelected"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="GS2-IS-dlO"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-gX-sZh">
+                    <rect key="frame" x="0.0" y="436" width="229" height="20"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackLine" translatesAutoresizingMaskIntoConstraints="NO" id="liD-XJ-a8P">
+                    <rect key="frame" x="-7" y="230" width="216" height="20"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NHp-dI-UOj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NVy-zw-8Nh"/>
+                <constraint firstAttribute="trailing" secondItem="NHp-dI-UOj" secondAttribute="trailing" id="War-PG-0PD"/>
+                <constraint firstItem="NHp-dI-UOj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X2X-Ud-gBE"/>
+                <constraint firstAttribute="bottom" secondItem="NHp-dI-UOj" secondAttribute="bottom" id="ryt-No-r7T"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="cityBtn" destination="OyZ-Ti-MDp" id="pcm-Rt-3Zd"/>
+                <outlet property="preSelBtn" destination="jCC-54-K0I" id="BSV-jG-KhD"/>
+            </connections>
+            <point key="canvasLocation" x="212.5" y="257.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImage" width="194" height="186"/>
+        <image name="blackLine" width="258" height="24"/>
+        <image name="city_down_6P" width="24" height="15"/>
+        <image name="found" width="185" height="54"/>
+        <image name="foundSelected" width="185" height="54"/>
+        <image name="home" width="185" height="54"/>
+        <image name="homeSeletced" width="185" height="54"/>
+        <image name="message" width="185" height="54"/>
+        <image name="messageSelected" width="185" height="54"/>
+        <image name="seting" width="185" height="54"/>
+        <image name="setingSelected" width="185" height="54"/>
+        <image name="sina" width="194" height="51"/>
+        <image name="unLogin" width="202" height="50"/>
+        <image name="weixin" width="194" height="51"/>
+    </resources>
+</document>

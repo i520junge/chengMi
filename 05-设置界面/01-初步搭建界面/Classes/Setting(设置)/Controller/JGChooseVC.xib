@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGChooseVC">
+            <connections>
+                <outlet property="imageView" destination="caD-A7-c5l" id="HGX-zC-5Ck"/>
+                <outlet property="tableView" destination="ChC-nW-seQ" id="lgK-lv-nmq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="longsit_head_image" translatesAutoresizingMaskIntoConstraints="NO" id="caD-A7-c5l">
+                    <rect key="frame" x="0.0" y="64" width="375" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="lEK-g4-4hc"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-nW-seQ">
+                    <rect key="frame" x="0.0" y="234" width="375" height="433"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ChC-nW-seQ" firstAttribute="top" secondItem="caD-A7-c5l" secondAttribute="bottom" id="22O-hN-b5d"/>
+                <constraint firstAttribute="bottom" secondItem="ChC-nW-seQ" secondAttribute="bottom" id="6Bb-sE-xpz"/>
+                <constraint firstItem="ChC-nW-seQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Txy-1R-FUF"/>
+                <constraint firstItem="caD-A7-c5l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="n8Q-Zt-yuM"/>
+                <constraint firstItem="caD-A7-c5l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="njb-E8-w1h"/>
+                <constraint firstAttribute="trailing" secondItem="ChC-nW-seQ" secondAttribute="trailing" id="u7C-ka-KD0"/>
+                <constraint firstAttribute="trailing" secondItem="caD-A7-c5l" secondAttribute="trailing" id="v8o-eV-RzN"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="longsit_head_image" width="238" height="170"/>
+    </resources>
+</document>

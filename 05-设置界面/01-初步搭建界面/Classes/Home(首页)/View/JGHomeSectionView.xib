@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGHomeSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqb-WU-FuV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keg-Gw-eXw">
+                            <rect key="frame" x="10" y="10" width="42" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKA-xi-zC7">
+                            <rect key="frame" x="293" y="11.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="vG1-Vi-mEU">
+                            <rect key="frame" x="345" y="11.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="3kG-Dz-6IC"/>
+                                <constraint firstAttribute="height" constant="20" id="mpS-cW-0z0"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="keg-Gw-eXw" firstAttribute="leading" secondItem="cqb-WU-FuV" secondAttribute="leading" constant="10" id="5Ik-hd-Szs"/>
+                        <constraint firstItem="vG1-Vi-mEU" firstAttribute="leading" secondItem="uKA-xi-zC7" secondAttribute="trailing" constant="10" id="FbS-IN-rG1"/>
+                        <constraint firstAttribute="trailing" secondItem="vG1-Vi-mEU" secondAttribute="trailing" constant="10" id="KT4-vO-dCz"/>
+                        <constraint firstAttribute="bottom" secondItem="keg-Gw-eXw" secondAttribute="bottom" constant="10" id="YLb-HA-wb3"/>
+                        <constraint firstItem="keg-Gw-eXw" firstAttribute="top" secondItem="cqb-WU-FuV" secondAttribute="top" constant="10" id="cNY-97-C0F"/>
+                        <constraint firstItem="vG1-Vi-mEU" firstAttribute="centerY" secondItem="cqb-WU-FuV" secondAttribute="centerY" id="diE-an-eXx"/>
+                        <constraint firstItem="uKA-xi-zC7" firstAttribute="centerY" secondItem="cqb-WU-FuV" secondAttribute="centerY" id="j5D-Pp-eGM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.47058823529999999" green="0.93333333330000001" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cqb-WU-FuV" secondAttribute="bottom" id="6tI-AM-e2c"/>
+                <constraint firstAttribute="trailing" secondItem="cqb-WU-FuV" secondAttribute="trailing" id="fNM-oI-2JZ"/>
+                <constraint firstItem="cqb-WU-FuV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nNo-fW-Pvk"/>
+                <constraint firstItem="cqb-WU-FuV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yX5-Fw-PVQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subLabel" destination="uKA-xi-zC7" id="cDu-kO-ayE"/>
+                <outlet property="titleLabel" destination="keg-Gw-eXw" id="WsF-hQ-I2f"/>
+            </connections>
+            <point key="canvasLocation" x="11.5" y="294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="14" height="24"/>
+    </resources>
+</document>
